@@ -11,7 +11,12 @@
 
 ## Installation
 
-Clone the package into directory of choice, then run (required to have Node installed):
+Clone the package into directory of choice:
+```
+git clone https://github.com/Bobeta/reactive-weather.git
+```
+
+ then run (required to have Node installed):
 
 ```
 npm install
@@ -23,21 +28,13 @@ Create your free Open Weather Map API key by signing up on [**their website**](h
 var apiKey = 'yourApiKey';
 ```
 
-After you make changes to JSX files, run the following command:
+Run the following command to re-compile after adding API key (**ctrl + c to stop**):
 ```
 npm start
 ```
 
-All the changes you make to main.jsx files and its components will then be watched and automatically compile to public/js/main.js. To stop the process, just do **ctrl + c**. 
 
-Bootstrap is already included in public/css/bootstrap.css. You can use included bower setup to add a different sass version and the following command to replace the current css with it:
-
-```
-npm bootstrap
-```
-
-
-## Usage
+## Usage and Changes
 
 Just add a tag with id of reactive-weather to wherever you want to display the weather widget, example:
 ```
@@ -46,21 +43,33 @@ Just add a tag with id of reactive-weather to wherever you want to display the w
 
 Make sure that you have main.js added as script file. There's an example usage in public/index.html. 
 
-All the desired changes should be made to the content in the /src directory. Browser-sync functionality is already included out of the box, just run the following command to see your changes being made live:
+All the desired changes should be made to the content in the /src directory. After you make changes to JSX files, run the following command:
+```
+npm start
+```
+
+The changes you make to src/main.jsx files and components in src/components will then automatically compile to public/js/main.js. To stop the process, just do **ctrl + c**. 
+
+Bootstrap is already included in public/css/bootstrap.css. You can use included bower setup to add a different sass version and the following command to replace the current css with it:
+
+```
+npm run bootstrap
+```
+
+Browser-sync functionality is already included out of the box, just run the following command to see your changes being made live:
 ```
 npm run browser-sync
 ```
 
-
 ## Contributing
 
-You are very welcome to contribute to the project! Please read [**contributing guide**](CONTRIBUTING.md).
+You are welcome to contribute to the project if you like, please read [**contributing guide**](CONTRIBUTING.md).
 
 ## Credits
 
-[**Reactive Weather**](https://github.com/bobeta/reactive-weather) was created as a [**hacktoberfest**](https://hacktoberfest.digitalocean.com/) educational project. **Reacting Weather** is created and maintained by [**Moris Pasic**](https://github.com/bobeta).
+[**Reactive Weather**](https://github.com/bobeta/reactive-weather) was created as a [**hacktoberfest**](https://hacktoberfest.digitalocean.com/) educational project by [**Moris Pasic**](https://github.com/bobeta).
 
-Big thanks to all **contributors**.
+Future contributors will be listed here. And finally thank you for showing interest!
 
 ## License
 ```
