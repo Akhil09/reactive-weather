@@ -1,0 +1,48 @@
+{
+  "name": "Reactive-Weather",
+  "version": "0.0.1",
+  "description": "Realtime Weather App built with React, using API from Openweathermap.org",
+  "main": "main.js",
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
+    "bootstrap": "node-sass --include-path scss bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss public/css/bootstrap.css --output-style compressed",
+    "browser-sync": "browser-sync start --server 'public' --files 'public/, src/'",
+    "serve": "parallelshell 'npm run start' 'npm run browser-sync'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bobeta/reactive-weather"
+  },
+  "keywords": [
+    "react",
+    "realtime",
+    "weather",
+    "app",
+    "Openweathermap"
+  ],
+  "author": "Bobeta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobeta/reactive-weather/issues"
+  },
+  "homepage": "https://github.com/bobeta/reactive-weather#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "moment": "^2.13.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.13.0",
+    "eslint": "^2.12.0",
+    "eslint-plugin-react": "^5.2.0",
+    "node-sass": "^3.7.0",
+    "onchange": "^2.5.0",
+    "parallelshell": "^2.0.0",
+    "watchify": "^3.7.0"
+  }
+}

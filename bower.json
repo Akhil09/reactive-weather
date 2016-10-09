@@ -1,0 +1,22 @@
+{
+  "name": "reactive-weather",
+  "description": "Realtime Weather App built with React, using API from Openweathermap.org",
+  "main": "public/index.html",
+  "authors": [
+    "Bobeta"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "reactive",
+    "weather",
+  ],
+  "homepage": "https://github.com/Bobeta/reactive-weather",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
